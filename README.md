@@ -22,3 +22,11 @@ Abstract data types often do not reveal its representation to the user. Abstract
    - differ() compares objects, returns true if not equal, false if equal
 
 refert to the [set.h](oop-c/src/set.h), [new.h](oop-c/src/new.h) header file
+
+- main.c with headers included and skeleton structure compiles but fails to link since source functions are not defined.
+- Abstract data types and the memory manager must be implemented
+- if an object stores no information and if every object belongs to at most one set
+   - represent each object and each set as small, unique, positive integer value used as indices into an array heap[]
+- if an object is a member of a set
+   - its array element contains the integer value representing the set
+- Object points to the set containing them
